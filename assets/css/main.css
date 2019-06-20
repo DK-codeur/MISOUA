@@ -1,0 +1,558 @@
+/*********************************home************************/
+
+/*generale*/
+*
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+.loader
+    {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: wait;
+        background: url('../images/loader.gif');
+        background-position: center !important;
+        background-repeat: no-repeat;
+        background-color: #fff;
+    }
+
+    /*navbar*/
+.navbar
+    {
+        line-height: 3%;
+    }
+
+.navbar-nav 
+    {
+        align-items: center !important;
+    }
+
+.nav-link
+    {
+        line-height: inherit;
+        padding: 8px;
+        margin: 7px;
+        font-size: 18px;
+    }
+
+.navbar-brand
+    {
+        font-size: xx-large;
+        margin-right: 50px;
+        font-weight: bold;
+    }
+
+.dropdown-menu a
+    {
+        line-height: initial;
+    }
+
+.fa.fa-search
+    {
+        color: white;
+        font-size: 25px;
+        position: relative;
+        /* right: 70px; */
+        top: 3px;
+        cursor: pointer;
+        line-height: inherit
+    }
+
+.block-search
+    {
+        display: none;
+        position: relative;
+        width: 384px;
+    }
+
+.block-fa-search
+    {
+        position: relative;
+        top: 3px;
+        line-height: 35px;
+    }
+
+#chercher
+    {
+        /* display: none; */
+        border-radius: 35px;
+        line-height: 0;
+        width: 270px;
+    }
+
+.dropdown
+    {
+        right: 18px;
+    }
+
+#btn-chercher
+    {
+        display: none;
+        position: absolute;
+        top: -4px;
+        right: -15px;
+        border-radius: 5px;
+        color: #646769;
+    }
+
+
+    /*carousel*/
+.carousel-caption
+    {
+        position: absolute !important;
+        bottom: 20px !important;
+        left: 12%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+    }
+
+.fa.fa-chevron-circle-left
+    {
+        position: absolute;
+        left: 10px;
+    }
+
+.fa.fa-chevron-circle-right
+    {
+        position: absolute;
+        right: 10px;
+    }
+
+.divider-blue
+    {
+        height: 4px;
+        width: 300px;
+        background-color: #2d46d2;
+    }
+
+.indigoDK {
+        background-color: #050c33f8 !important;
+       
+    }
+
+.divider-indigo
+    {
+        height: 3px;
+        width: 220px;
+        background-color: #2d46d2;
+        margin: 5px auto 15px auto;
+    }
+
+h2
+    {
+        text-align: center;
+        margin: 25px 0 0 0;
+    }
+
+
+
+.detail-maison
+    {
+        position: absolute;
+        top: 170px;
+        right: 27px;
+        color: #3f51b4;
+    }
+
+.card-bottom-color
+    {
+        background-color: #3f51b5 !important;
+        color: #fff;
+    }
+
+#statut-maison
+    {
+        position: absolute;
+    }
+
+.price
+    {
+        color: #3f51b5 !important;
+
+    }
+
+#add-favori
+    {
+        cursor: pointer;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        color: #e9ecef;
+    }
+
+
+.card-img-top
+    {
+        transition: all ease-in .3s 0s
+    }
+    
+.card-img-top:hover
+    {
+        transform: scale(1.1);
+        transition: all ease-in .6s 0s;
+        cursor: pointer;
+    }
+
+
+/*recherche-avance*/
+#min-val, #max-val
+    {
+        width: 150px;
+    }
+
+.recherche-avance
+    {
+        display: none;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+#exploration-avance
+    {
+        position: relative;
+        left: 546px;
+        color: rgb(87, 86, 86) !important;
+    }
+
+.close-recherche-avance
+    {
+        position: relative;
+        /* left: 650px; */
+        color: rgb(105, 103, 103) !important;
+        cursor: pointer;
+        top: -60px;
+        width: 40px;
+        margin: auto;
+        text-align: center;
+    }
+
+#close
+    {
+        display: none;
+       
+    }
+
+/*pagination*/
+
+.pagination
+    {
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+footer
+    {
+        background-color: #050c33;
+        margin: 25px auto 0px auto;
+        padding-top: 25px;
+        padding-right: 25px;
+        padding-bottom: 1px;
+        padding-left: 25px;
+        color: white;
+    }
+
+footer h2
+    {
+        color: #4285f4;
+    }
+
+.divider-footer
+    {
+        height: 3px;
+        width: 200px;
+        background-color: #4285f4;
+        margin: 10px auto;
+    }
+
+.DK-codeur
+    {
+        color: #4285f4;
+    }
+
+
+
+
+/************************************* login **********************************/
+#login-page
+    {
+        /* background-image: url('../images/cover-login.jpg'); */
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.3) 100%, rgba(200, 80, 192, 0) 100%, rgba(255, 205, 112, 0.671) 100%),
+                    url(../images/cover-login.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+.login-misoua
+    {
+        width: 90%;
+        max-width: 400px;
+        margin: 5% auto;
+        color: white;
+        padding: 3%;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #020202a1;
+        z-index: 111;
+    }
+
+.login-misoua .form-control 
+    {
+        color: #bbb2b2 !important;
+    }
+
+.fa.fa-user-lock, .fa.fa-user
+    {
+        color: #3f51b4;
+    }
+
+.connectez-vous, .inscrivez-vous
+    {
+        color: #5262bb;
+    }
+
+
+/************************************* register **********************************/
+.register-misoua
+    {
+        width: 90%;
+        max-width: 400px;
+        margin: 1% auto 0px auto;
+        color: white;
+        padding: 7px 3% 8px 3%;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #020202a1;
+        z-index: 111;
+    }
+
+.register-misoua .form-control
+    {
+        color: #bbb2b2 !important;
+    }
+
+.btn-accueil
+    {
+        position: absolute;
+        color: #acb1cc;
+        padding: 12px;
+        cursor: pointer;
+    }
+
+#alert-register
+    {
+        position: absolute !important;
+        right: 60px;
+        top: 35px;
+        /* font-weight: bold; */
+        font-size: 20px;
+    }
+
+
+
+    /*******************************Dashboard****************************************/
+.detail-user
+    {
+        /* width: max-content !important; */
+        margin: auto !important;
+    }
+
+.thing-user
+    {
+        width: max-content !important;
+        margin: auto !important;
+
+    }
+
+.nom-user-dash
+    {
+        text-align: center;
+    }
+
+.testimonial-card
+    {
+        width: 300px !important;
+    }
+
+.info-user-dash
+    {
+        color: #3f51b4;
+    }
+
+.fa.fa-edit
+    {
+        text-align: center;
+        color: #2d46d2;
+        margin: auto;
+        cursor: pointer;
+    }
+
+.md-pills
+    {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+#card-user-dash
+    {
+        width: 247px !important;
+    }
+
+.self-pub
+    {
+        box-shadow: 1px 0px 6px #252f69;
+    }
+
+.self-pub-img
+    {
+        width: 185px;
+    }
+
+.modif-self-pub
+    {
+        border-top: 1px rgb(202, 202, 202) solid;
+    }
+
+.self-pub-detail h5
+    {
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 215px;
+    }
+
+    /************************************Publish***************************************************/
+.publish-form 
+    {
+        width: 90% !important;
+        margin: auto !important;
+        padding: 20px !important;
+    }
+
+.images-block
+    {
+        width: 90%;
+        margin: 3% auto 3% auto;
+    }
+
+#publish-block
+    {
+        background-color: #fbf9f9;
+    }
+
+#alert-publish
+    {
+        position: fixed !important;
+        right: 60px;
+        top: 35px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+/*********************************Admin**********************************************/
+#side-admin ul li   
+    {
+        list-style-type: none;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 12px;
+        color: white;
+        border-bottom: 1px white solid;
+    }
+
+#side-admin
+    {
+        padding: 12px;
+        height: -webkit-fill-available;
+        background-color: #3f51b5;;
+        box-shadow: 3px 3px 25px;
+    }
+
+#side-admin h2
+    {
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.89);
+        margin-bottom: 40px;
+    }
+
+.link-admin
+    {
+        width: 265px !important;
+        cursor: pointer;
+    }
+
+#admin-resume
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+.admin-resume-item
+    {
+        margin-top: 15px;
+        width: 300px;
+        height: 150px;
+        border: 2px rgb(6, 6, 151) solid;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        box-shadow: 1px 1px 8px blue
+    }
+
+.admin-resume-item h3
+    {
+        font-weight: bold;
+        color: #3f51b5;
+        text-align: center;
+    }
+
+.admin-resume-item:hover
+    {
+        box-shadow: 0px 0px;
+    }
+
+/* .admin-resume-item:nth-child(1)
+    {
+
+    }
+
+.admin-resume-item:nth-child(1)
+    {
+        
+    }
+
+.admin-resume-item:nth-child(1)
+    {
+        
+    } */
+
+
+/*********************************Update*******************************************************/
+.update-block
+    {
+        margin: 2% 5% 2% 5%;
+        padding: 0% 5% 2% 5%;
+    }
+
+.block-form-update-user
+    {
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        padding: 4% 0% 2% 0%;
+    }
+    

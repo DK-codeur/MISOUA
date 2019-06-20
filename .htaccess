@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+#RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ index.php?&page=$1&%{QUERY_STRING}
+
+RewriteRule ^home$ index.php?page=home
+RewriteRule ^detail$ index.php?page=detail
+RewriteRule ^admin$ index.php?page=admin
+RewriteRule ^dashboard$ index.php?page=dashboard
+RewriteRule ^login$ index.php?page=login
+RewriteRule ^logout$ index.php?page=logout
+RewriteRule ^publish$ index.php?page=publish
+RewriteRule ^register$ index.php?page=register 
+RewriteRule ^update-user$ index.php?page=update-user
+
+RewriteRule ^detail-([0-9]+)-(.*)$ index.php?page=detail&id=$1&titre=$2
+
